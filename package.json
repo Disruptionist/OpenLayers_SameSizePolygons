@@ -1,0 +1,18 @@
+{
+  "name": "polygonsamesizezoom",
+  "version": "1.0.0",
+  "description": "To make Polygons of same size even while zooming",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "author": "Harikrishnan S R",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ol": "^4.6.2",
+    "jquery": "^3.3.1",
+    "ol": "^5.2.0",
+    "parcel-bundler": "^1.9.7"
+  }
+}
