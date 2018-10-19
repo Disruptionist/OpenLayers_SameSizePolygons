@@ -9,4 +9,13 @@ The project is to keep the Polygons same as well as to change the size of polygo
 + This will install all the dependancies for thsiproject
 + We are using parcel bundler for creating a localhost server and deliver the output.
 
+### Here we have used two Polygons
+
+1) Triangle 
+2) Custom Arrow shaped Polygon
+
+Image below:
+
+![Polygons Image](/Poly.PNG "Polygon Images")
+
 
