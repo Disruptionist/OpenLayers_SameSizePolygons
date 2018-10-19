@@ -16,6 +16,6 @@ The project is to keep the Polygons same as well as to change the size of polygo
 
 Image below:
 
-![Polygons Image](/Poly.PNG "Polygon Images")
+
 
 
