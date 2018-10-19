@@ -34,8 +34,6 @@ import {
 
 import $ from 'jquery';
 
-
-//var pos = fromLonLat([76.87322616577147, 8.56899867537345]);
 var pos = fromLonLat([76.86687469482423, 8.564810721288154]);
 
 //Position for our Triangle Polygon
@@ -96,17 +94,9 @@ function myFunction() {
 
     var resol = viewOne.getResolution();
     for (var outer = 0; outer < cordArrow.length; outer++) {
-
-        // for (var inner = 0; inner < cordArrow[outer].length; inner++) {
         cordArray[outer][0] = transPosArrow[0] + (cordArrow[outer][0] - pos[0]) * resol / resOne;
         cordArray[outer][1] = transPosArrow[1] + (cordArrow[outer][1] - pos[1]) * resol / resOne;
-
-        //cordArray[outer][0] = centreArrow[0] + (cordArrow[outer][0] - centreArrow[0]) * (resol / resOne);
-
-        //cordArray[outer][1] = centreArrow[1] + (cordArrow[outer][1] - centreArrow[1]) * (resol / resOne);
-        // }
     }
-
     console.log(cordArray);
     if (featureArrow) {
         featureArrow.setGeometry(new Polygon([cordArray]));
@@ -114,6 +104,7 @@ function myFunction() {
 }
 
 //calling myFunction and creating out Polygon
+
 myFunction();
 var polyArrow = new Polygon([cordArray]);
 
@@ -123,6 +114,7 @@ var transStartArrow = [];
 var i;
 
 //Below code is to set the coordinates when we Translate
+
 translate.on('translatestart', function (evt) {
     for (i = 0; i < evt.features.getArray().length; i++) {
         console.log(evt.features.getArray().length);
@@ -191,6 +183,7 @@ var map = new Map({
 });
 
 //document.getElementById("map").addEventListener("wheel", myFunction); // deleted
+
 viewOne.on("change:resolution", myFunction); // added
 
 $(document).ready(function () {
